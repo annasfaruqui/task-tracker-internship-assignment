@@ -1,4 +1,4 @@
-function Input({ name, type, placeholder, value, onChange }) {
+function Input({ name, type, placeholder, value, onChange, disabled }) {
   return (
     <input
       name={name}
@@ -7,6 +7,7 @@ function Input({ name, type, placeholder, value, onChange }) {
       value={value}
       onChange={onChange}
       className="input"
+      disabled={disabled}
     />
   );
 }

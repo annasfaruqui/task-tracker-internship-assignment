@@ -6,7 +6,7 @@ function Button({ children, type, onClick }) {
     btnStyles += " bg-blue-600 text-white hover:bg-blue-700";
   if (type === "secondary")
     btnStyles +=
-      " bg-slate-200 text-slate-900 ring-slate-300 ring-inset ring-1 hover:bg-slate-300 duration-150";
+      " bg-slate-100 text-slate-900 ring-slate-300 ring-inset ring-1 hover:bg-slate-200 duration-150";
 
   return (
     <button className={btnStyles} onClick={onClick}>

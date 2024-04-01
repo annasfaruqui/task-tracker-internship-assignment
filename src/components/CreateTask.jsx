@@ -11,27 +11,27 @@ function CreateTask() {
   return (
     <form className="grid grid-cols-[1fr_4fr] gap-x-2 gap-y-4">
       {/* Title */}
-      <label>Title:</label>
-      <Input name="title" placeholder="Enter title name" />
+      <label for="description">Title:</label>
+      <Input id="title" name="title" placeholder="Enter title name" />
 
       {/* Description */}
-      <label>Description:</label>
-      <Textarea placeholder="Enter task description..." />
+      <label for="description">Description:</label>
+      <Textarea id="description" placeholder="Enter task description..." />
 
       {/* Team */}
-      <label>Team:</label>
-      <Input name="team" />
+      <label for="team">Team:</label>
+      <Input id="team" name="team" placeholder="Enter team name" />
 
       {/* Assignee */}
-      <label>Assignee:</label>
-      <Input name="assignee" />
+      <label for="assignee">Assignee:</label>
+      <Input id="assignee" name="assignee" placeholder="Enter assignee name" />
 
       {/* Priority */}
-      <label>Priority</label>
-      <Select name="priority">
-        <option>P0</option>
-        <option>P1</option>
-        <option>P2</option>
+      <label for="priority">Priority</label>
+      <Select id="priority" name="priority">
+        <option value="P0">P0</option>
+        <option value="P1">P1</option>
+        <option value="P2">P2</option>
       </Select>
 
       <div className="col-start-2 mt-6 flex w-full items-center justify-center gap-3 ">

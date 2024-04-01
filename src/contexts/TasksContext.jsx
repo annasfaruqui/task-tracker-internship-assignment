@@ -14,7 +14,9 @@ function reducer(state, action) {
       return {
         ...state,
         filteredTasks: state.tasks.filter(
-          (task) => task.assignee.toLowerCase() === action.payload.assigneeName,
+          (task) =>
+            task.assignee.toLowerCase() === action.payload.assigneeName &&
+            task.priority === action.payload.filterBy,
         ),
       };
 

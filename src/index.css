@@ -8,6 +8,6 @@
 
 @layer components {
   .input {
-    @apply rounded-sm bg-slate-100 px-2 py-1 text-sm text-slate-600 placeholder-slate-400;
+    @apply cursor-pointer rounded-sm bg-slate-50 px-2 py-1 text-sm text-slate-600 placeholder-slate-400 disabled:cursor-not-allowed disabled:bg-slate-200 disabled:text-slate-500;
   }
 }

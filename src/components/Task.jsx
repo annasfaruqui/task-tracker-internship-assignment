@@ -30,7 +30,7 @@ function Task({ task }) {
           <Menus.Menu>
             <Menus.Toggle id={id} />
             <Menus.List id={id}>
-              <Modal.Open opens="edit">
+              <Modal.Open opens="edit-task">
                 <Menus.Button icon={<FaEdit />}>Edit</Menus.Button>
               </Modal.Open>
 
@@ -38,8 +38,9 @@ function Task({ task }) {
                 Delete
               </Menus.Button>
             </Menus.List>
-            <Modal.Window name="edit">
-              <EditTask />
+
+            <Modal.Window name="edit-task" heading="Edit task">
+              <EditTask task={task} />
             </Modal.Window>
           </Menus.Menu>
         </Modal>
