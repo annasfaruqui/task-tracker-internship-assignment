@@ -1,4 +1,12 @@
-function Input({ name, type, placeholder, value, onChange, disabled }) {
+function Input({
+  name,
+  type = "text",
+  placeholder,
+  value,
+  onChange,
+  disabled,
+  required,
+}) {
   return (
     <input
       name={name}
@@ -8,6 +16,7 @@ function Input({ name, type, placeholder, value, onChange, disabled }) {
       onChange={onChange}
       className="input"
       disabled={disabled}
+      required={required}
     />
   );
 }

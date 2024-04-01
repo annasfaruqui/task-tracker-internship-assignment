@@ -6,9 +6,12 @@ function Sort({ sortBy, setSortBy }) {
       <p className="mr-2 font-semibold">Sort By:</p>
       <Select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
         <option>Priority</option>
-        <option value="P0">P0</option>
-        <option value="P1">P1</option>
-        <option value="P2">P2</option>
+        <option value="priority-asc">Priority(ascending)</option>
+        <option value="priority-desc">Priority(descending)</option>
+        <option value="startDate-asc">Start Date(earlier first)</option>
+        <option value="startDate-desc">Start Date(recent first)</option>
+        <option value="endDate-asc">End Date(earlier first)</option>
+        <option value="endDate-desc">End Date(recent first)</option>
       </Select>
     </div>
   );

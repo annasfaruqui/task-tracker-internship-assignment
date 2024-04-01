@@ -6,18 +6,48 @@ import { useTasks } from "../contexts/TasksContext";
 function TaskTracker() {
   const { filteredTasks, dispatch } = useTasks();
 
-  function handleFilter(assigneeName, filterBy, date) {
-    if (!assigneeName && !date && !filterBy) return;
+  function handleFilter(assigneeName, priority, date) {
+    if (!assigneeName && !date && priority) return;
 
-    if (filterBy === "")
+    if (assigneeName && priority !== "") {
       dispatch({
-        type: "tasks/filter",
-        payload: { assigneeName, filterBy, date },
+        type: "tasks/filter/all",
+        payload: { assigneeName, priority, date },
       });
+    }
+
+    if (assigneeName && priority === "") {
+      dispatch({ type: "tasks/filter/assignee", payload: assigneeName });
+    }
   }
 
   function handleSort(sortBy) {
+    console.log("Before: ", filteredTasks);
+    console.log("function runnnign");
+
     if (!sortBy) return;
+
+    if (sortBy === "priority-asc") {
+      dispatch({ type: "tasks/sort/priority/asc" });
+    }
+    if (sortBy === "priority-desc") {
+      dispatch({ type: "tasks/sort/priority/desc" });
+    }
+    if (sortBy === "startDate-asc") {
+      console.log(sortBy);
+    }
+    if (sortBy === "startDate-desc") {
+      console.log(sortBy);
+    }
+    if (sortBy === "endDate-asc") {
+      console.log(sortBy);
+    }
+    if (sortBy === "endDate-desc") {
+      console.log(sortBy);
+    }
+
+    console.log("After: ", filteredTasks);
+    console.log("function runnnign 2");
   }
 
   return (

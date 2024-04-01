@@ -9,12 +9,12 @@ import Sort from "./Sort";
 function TaskOperations({ onFilter, onSort }) {
   const [assignee, setAssignee] = useState("");
   const [date, setDate] = useState("");
-  const [filterBy, setFilterBy] = useState("");
+  const [filterByPriority, setFilterByPriority] = useState("");
   const [sortBy, setSortBy] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
-    onFilter(assignee, filterBy, date);
+    onFilter(assignee, filterByPriority, date);
     onSort(sortBy);
   }
 
@@ -26,10 +26,10 @@ function TaskOperations({ onFilter, onSort }) {
       >
         <Filter
           assignee={assignee}
-          filterBy={filterBy}
+          filterBy={filterByPriority}
           date={date}
           setAssignee={setAssignee}
-          setFilterBy={setFilterBy}
+          setFilterBy={setFilterByPriority}
           setDate={setDate}
         />
         <Sort sortBy={sortBy} setSortBy={setSortBy} />

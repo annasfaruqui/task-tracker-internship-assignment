@@ -20,7 +20,7 @@ function Filter({
           onChange={(e) => setAssignee(e.target.value)}
         />
         <Select value={filterBy} onChange={(e) => setFilterBy(e.target.value)}>
-          <option>Priority</option>
+          <option value="">Priority</option>
           <option value="P0">P0</option>
           <option value="P1">P1</option>
           <option value="P2">P2</option>

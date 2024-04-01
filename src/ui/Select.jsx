@@ -1,6 +1,11 @@
-function Select({ children, value, onChange }) {
+function Select({ children, value, onChange, required }) {
   return (
-    <select value={value} onChange={onChange} className="input w-fit">
+    <select
+      value={value}
+      onChange={onChange}
+      className="input w-fit"
+      required={required}
+    >
       {children}
     </select>
   );

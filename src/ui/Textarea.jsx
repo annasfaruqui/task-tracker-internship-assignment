@@ -1,4 +1,4 @@
-function Textarea({ placeholder, value, onChange, disabled }) {
+function Textarea({ placeholder, value, onChange, disabled, required }) {
   return (
     <textarea
       placeholder={placeholder}
@@ -6,6 +6,7 @@ function Textarea({ placeholder, value, onChange, disabled }) {
       onChange={onChange}
       className="input h-24"
       disabled={disabled}
+      required={required}
     ></textarea>
   );
 }

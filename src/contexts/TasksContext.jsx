@@ -10,13 +10,33 @@ const initialState = {
 
 function reducer(state, action) {
   switch (action.type) {
-    case "tasks/filter":
+    case "tasks/createTask":
+      return {
+        ...state,
+        tasks: [...state.tasks, action.payload],
+        filteredTasks: [...state.tasks, action.payload],
+      };
+
+    case "tasks/updateTask":
+      return {
+        ...state,
+      };
+
+    case "tasks/filter/assignee":
+      return {
+        ...state,
+        filteredTasks: state.tasks.filter(
+          (task) => task.assignee.toLowerCase() === action.payload,
+        ),
+      };
+
+    case "tasks/filter/all":
       return {
         ...state,
         filteredTasks: state.tasks.filter(
           (task) =>
             task.assignee.toLowerCase() === action.payload.assigneeName &&
-            task.priority === action.payload.filterBy,
+            task.priority === action.payload.priority,
         ),
       };
 
@@ -26,6 +46,22 @@ function reducer(state, action) {
         tasks: state.tasks.filter((task) => task.id !== action.payload),
         filteredTasks: state.filteredTasks.filter(
           (task) => task.id !== action.payload,
+        ),
+      };
+
+    case "tasks/sort/priority/asc":
+      return {
+        ...state,
+        filteredTasks: state.tasks.sort((a, b) =>
+          b.title.localeCompare(a.title),
+        ),
+      };
+
+    case "tasks/sort/priority/desc":
+      return {
+        ...state,
+        filteredTasks: state.tasks.sort((a, b) =>
+          a.title.localeCompare(b.title),
         ),
       };
 
