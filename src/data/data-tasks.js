@@ -1,0 +1,167 @@
+export const tasksList = [
+  {
+    id: 1,
+    title: "Task 1",
+    description:
+      "This is task one. It involves designing the user interface for the new mobile application.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "Pending",
+    assignee: "James",
+    priority: "P1",
+  },
+  {
+    id: 2,
+    title: "Task 2",
+    description:
+      "This is task two. It requires conducting market research to identify potential target demographics.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "In Progress",
+    assignee: "Alice",
+    priority: "P2",
+  },
+  {
+    id: 3,
+    title: "Task 3",
+    description:
+      "This is task three. It involves implementing new features based on client feedback for the web application.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "Completed",
+    assignee: "Bob",
+    priority: "P0",
+  },
+  {
+    id: 4,
+    title: "Task 4",
+    description:
+      "This is task four. It requires testing the latest software update for compatibility across different devices.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "Deployed",
+    assignee: "Emily",
+    priority: "P1",
+  },
+  {
+    id: 5,
+    title: "Task 5",
+    description:
+      "This is task five. It involves reviewing and optimizing the database queries for improved performance.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "Deferred",
+    assignee: "Michael",
+    priority: "P2",
+  },
+  {
+    id: 6,
+    title: "Task 6",
+    description:
+      "This is task six. It involves analyzing market trends and preparing a report for the upcoming product launch.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "Pending",
+    assignee: "Emma",
+    priority: "P1",
+  },
+  {
+    id: 7,
+    title: "Task 7",
+    description:
+      "This is task seven. It requires coding the backend functionality for the new user authentication system.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "In Progress",
+    assignee: "John",
+    priority: "P2",
+  },
+  {
+    id: 8,
+    title: "Task 8",
+    description:
+      "This is task eight. It involves conducting user acceptance testing (UAT) for the latest software update.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "Completed",
+    assignee: "Sophia",
+    priority: "P0",
+  },
+  {
+    id: 9,
+    title: "Task 9",
+    description:
+      "This is task nine. It requires deploying the latest website changes to the production server.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "Deployed",
+    assignee: "William",
+    priority: "P1",
+  },
+  {
+    id: 10,
+    title: "Task 10",
+    description:
+      "This is task ten. It involves coordinating with marketing teams to launch a promotional campaign.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "Deferred",
+    assignee: "Olivia",
+    priority: "P2",
+  },
+  {
+    id: 11,
+    title: "Task 11",
+    description:
+      "This is task eleven. It requires reviewing and optimizing the frontend code for better performance.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "Pending",
+    assignee: "Noah",
+    priority: "P0",
+  },
+  {
+    id: 12,
+    title: "Task 12",
+    description:
+      "This is task twelve. It involves conducting market analysis to identify potential business expansion opportunities.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "In Progress",
+    assignee: "Ava",
+    priority: "P1",
+  },
+  {
+    id: 13,
+    title: "Task 13",
+    description:
+      "This is task thirteen. It requires preparing documentation for the upcoming software release.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "Completed",
+    assignee: "James",
+    priority: "P2",
+  },
+  {
+    id: 14,
+    title: "Task 14",
+    description:
+      "This is task fourteen. It involves conducting security audits for the company's network infrastructure.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "Deployed",
+    assignee: "Ella",
+    priority: "P0",
+  },
+  {
+    id: 15,
+    title: "Task 15",
+    description:
+      "This is task fifteen. It requires analyzing customer feedback and proposing product improvements.",
+    startDate: "today",
+    endDate: "tommorrow",
+    status: "Deferred",
+    assignee: "Liam",
+    priority: "P1",
+  },
+];

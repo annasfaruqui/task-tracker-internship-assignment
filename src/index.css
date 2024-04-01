@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+@layer components {
+  .input {
+    @apply rounded-sm bg-slate-100 px-2 py-1 text-sm text-slate-600 placeholder-slate-400;
+  }
+}
